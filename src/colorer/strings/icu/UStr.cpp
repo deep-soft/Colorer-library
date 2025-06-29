@@ -11,11 +11,6 @@ UnicodeString UStr::to_unistr(const std::string& str)
   return {str.c_str(), static_cast<int32_t>(str.length()), Encodings::ENC_UTF8};
 }
 
-UnicodeString UStr::to_unistr(const std::u16string& str)
-{
-  return {str.c_str()};
-}
-
 std::string UStr::to_stdstr(const UnicodeString* str)
 {
   std::string out_str;
@@ -32,6 +27,11 @@ std::string UStr::to_stdstr(const uUnicodeString& str)
 
 #ifdef _WINDOWS
 // wchar_t and UChar are the same size
+
+UnicodeString UStr::to_unistr(const std::wstring& str)
+{
+  return {str.c_str()};
+}
 
 std::wstring UStr::to_stdwstr(const uUnicodeString& str)
 {

@@ -43,9 +43,9 @@ UnicodeString UStr::to_unistr(const std::string& str)
   return {str.c_str(), static_cast<int32_t>(str.length()), Encodings::ENC_UTF8};
 }
 
-UnicodeString UStr::to_unistr(const std::u16string& str)
+UnicodeString UStr::to_unistr(const std::wstring& str)
 {
-  return{str.c_str()};
+  return {str.c_str()};
 }
 
 bool UStr::HexToUInt(const UnicodeString& str_hex, unsigned int* result)
