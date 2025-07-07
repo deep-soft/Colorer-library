@@ -1,12 +1,18 @@
-## [1.5.0] - xxxx-xx-xx
+## [1.5.0] - 2025-07-07
+
 
 ### Added
+- documentation website https://colorer.github.io  (so far only in Russian)
 - Working with hrcsettings.xml added to the core. If the path to hrcsettings.xml omitted, the environment variable COLORER_HRC_SETTINGS is used.
-- A parameter for hrcsettings has been added to consoletools
-- A parameter for folder with user hrc-files has been added to consoletools
+  hrcsettings.xml is a configuration file designed to extend prototype settings defined in the basic library of HRC schematics, as well as to store user modifications of these settings.
+- consoletools:
+  - Added an input parameter to use hrcsettings.xml in consoletools
+  - Added an input parameter to specify a folder with custom hrc files.
+  - Added an input parameter to specify a folder with custom hrd files.
+  - Added the ability to work with relative paths in parameter values. The search starts from the current directory.
 
 ### Changed
-- The new package attribute is "global". The default value is "yes".
+- The new "global" attribute of the "package" element of the hrc file. The default value is "yes".
 - Separate loading of different hrc parts:
   - at the prototype loading stage, only prototypes and global packages are loaded.
   - at the type loading stage, only types and local packages are loaded.
