@@ -251,7 +251,7 @@ void printUsage()
           "  -cs<path>  Uses specified 'hrcsettings.xml' file\n"
           "  -cu<path>  Load user hrc-files from path\n"
           "  -cd<path>  Load user hrd-files from path\n"
-          "  -i<name>   Loads specified hrd rules from catalog\n"
+          "  -i<name>   Loads specified hrd style\n"
           "  -t<type>   Tries to use type <type> instead of type autodetection\n"
           "  -ls<name>  Use file <name> as input linking data source for href generation\n"
           "  -o<name>   Use file <name> as output stream\n"
