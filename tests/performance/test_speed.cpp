@@ -1,6 +1,9 @@
 #include <cwchar>
 #include <memory>
+#include "TestLogger.h"
 #include "tests.h"
+
+std::unique_ptr<TestLogger> logger;
 
 enum JobType { JT_NOTHING, JT_TEST1, JT_TEST2, JT_TEST3, JT_TEST4, JT_TEST5 };
 
@@ -80,6 +83,9 @@ int main(int argc, char* argv[])
     printError();
     return 1;
   }
+
+  logger = std::make_unique<TestLogger>();
+  Log::registerLogger(*logger);
 
   try {
     switch (job) {
