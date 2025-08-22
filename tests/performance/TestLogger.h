@@ -24,6 +24,8 @@ class TestLogger : public Logger
 
   void flush() override {}
 
+  LogLevel getCurrentLogLevel() override { return current_level; }
+
  private:
   Logger::LogLevel current_level = Logger::LOG_OFF;
 };

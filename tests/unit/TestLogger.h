@@ -28,6 +28,8 @@ class TestLogger : public Logger
     
   }
 
+  LogLevel getCurrentLogLevel() override { return current_level; }
+
   bool message_exists() const { return !log_messages.empty(); }
   bool message_print(bool waiting_exist = false) const
   {

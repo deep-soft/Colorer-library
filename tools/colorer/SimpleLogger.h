@@ -25,6 +25,7 @@ class SimpleLogger : public Logger
 
   void setLogLevel(Logger::LogLevel level);
   void flush() override;
+  LogLevel getCurrentLogLevel() override { return current_level; }
 
  private:
   std::ofstream ofs;
