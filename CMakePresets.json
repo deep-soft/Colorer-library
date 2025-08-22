@@ -173,8 +173,8 @@
     { "name": "msvc-arm64-Debug-noICU", "description": "MSVC for ARM64 (Debug, noICU)", "inherits": [ "base", "arm64", "Debug", "MSVC", "vcpkg_win_arm64", "NoICU", "Tests" ] },
     { "name": "msvc-arm64-Release-noICU", "description": "MSVC for ARM64 (Release, noICU)", "inherits": [ "base", "arm64", "Release", "MSVC", "vcpkg_win_arm64", "NoICU" ] },
     { "name": "linux-x64-Debug-noICU", "description": "Linux for x64 (Debug, noICU, LibXml)", "inherits": [ "base", "x64", "Debug", "NoVcpkg", "NoICU", "Tests" ] },
-    { "name": "linux-x64-Release-noICU", "description": "Linux for x64 (Release, noICU, LibXml)", "inherits": [ "base", "x64", "Release", "NoVcpkg", "NoICU" ] },
+    { "name": "linux-x64-Release-noICU", "description": "Linux for x64 (Release, noICU, LibXml)", "inherits": [ "base", "x64", "Release", "NoVcpkg", "NoICU", "Tests"] },
     { "name": "linux-x64-Debug", "description": "Linux for x64 (Debug, ICU, LibXml)", "inherits": [ "base", "x64", "Debug", "NoVcpkg", "Tests" ] },
-    { "name": "linux-x64-Release", "description": "Linux for x64 (Release, ICU, LibXml)", "inherits": [ "base", "x64", "Release", "NoVcpkg" ] }
+    { "name": "linux-x64-Release", "description": "Linux for x64 (Release, ICU, LibXml)", "inherits": [ "base", "x64", "Release", "NoVcpkg", "Tests" ] }
   ]
 }
